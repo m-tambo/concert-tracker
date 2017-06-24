@@ -29,19 +29,12 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				loader: 'style-loader!css-loader!autoprefixer-loader'
+				loader: 'style-loader!css-loader!postcss-loader'
 			},
 			{
 				test: /\.scss$/,
-				loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+				loader: 'style-loader!css-loader!postcss-loader!sass-loader'
 			}
 		]
 	}
 }
-
-
-
-
-
-
-

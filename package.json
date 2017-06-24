@@ -4,7 +4,7 @@
   "description": "A react app to keep track of concerts attended",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,24 @@
   "bugs": {
     "url": "https://github.com/m-tambo/concert-tracker/issues"
   },
-  "homepage": "https://github.com/m-tambo/concert-tracker#readme"
+  "homepage": "https://github.com/m-tambo/concert-tracker#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
 }
