@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import concertCount from './components/concertCount'
+import { concertCount } from './components/concertCount'
 
 window.React = React
 

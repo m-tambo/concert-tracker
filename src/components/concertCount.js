@@ -1,31 +1,34 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import '../stylesheets/ui.scss'
 
-export const concertCount = React.createClass({
+// _______ES6 CLASS BASED VERSION_______
 // class concertCount extends Component {
-  render() {
-    return (
+//   render() {
+//     return (
+//     )
+//   }
+// }
+
+// _______STATELESS COMPONENT VERSION_______
+export const concertCount = ({total, seen, seeAgain, yetToSee}) => (
       <div className='concert-count'>
         <div className='total-concerts'>
-          <span>{this.props.total}</span>
+          <span>{total}</span>
           <span>concerts</span>
         </div>
         <div className='seen-before'>
-          <span>{this.props.seen}</span>
+          <span>{seen}</span>
           <span>bands</span>
         </div>
         <div className='would-see-again'>
-          <span>{this.props.seeAgain}</span>
+          <span>{seeAgain}</span>
           <span>bands</span>
         </div>
         <div className='yet-to-see'>
-          <span>{this.props.yetToSee}</span>
+          <span>{yetToSee}</span>
           <span>concerts</span>
         </div>
       </div>
-    )
-  }
-// }
-})
+)
 
 // export default concertCount
